@@ -111,7 +111,15 @@
                 </p>
                 <div class="d-grid gap-2 d-flex justify-content-center mb-5">
                     <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box-strong">Get TUNIC</a>
-                    <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v2.0.0)</a>
+                    <div class="dropdown">
+                        <button class="btn btn-success btn-lg px-4 scanlines-box dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Get Randomizer
+                        </button>
+                        <ul class="dropdown-menu mt-1 scanlines-box-strong">
+                            <li><a class="dropdown-item" href="https://github.com/silent-destroyer/tunic-randomizer#installation">Single-Player (v2.0.0)</a></li>
+                            <li><a class="dropdown-item" href="https://github.com/silent-destroyer/tunic-randomizer-archipelago#installation">Multi-World (v1.0.0)</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,7 +162,7 @@
                         Hexagon Quest
                     </h1>
                     <p class="display-6">
-                        30 Gold Hexagons are shuffled throughout the world. Find 20 of them and visit The Heir to finish.
+                        Gold Hexagons are shuffled throughout the world. Find most of them and visit The Heir to finish.
                     </p>
                 </div>
             </div>
@@ -674,57 +682,80 @@
                 <h1 class="text-center text-white display-3" id="setup">
                     Setup
                 </h1>
-                <hr>
+                <ul class="nav nav-tabs nav-fill my-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-solo" href="#">Single-Player</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-multi" href="#">Multi-World</a>
+                    </li>
+                </ul>
                 <p>
                     A two-step process to set up the Randomizer mod.
                 </p>
             </div>
-            <div class="row pt-4 pt-sm-5 pb-4 pb-sm-5 mb-3 mb-xl-4">
-                <div class="col-12 col-xl-10 mx-auto">
-                    <div class="row row-cols-1 row-cols-lg-2 g-4 g-sm-5">
-                        <div class="col">
-                            <div class="h1 text-white mb-3">
-                                1. Install BepInEx
+            
+            <div class="tab-content">
+                <div class="row pt-4 pt-sm-5 pb-4 pb-sm-5 mb-3 mb-xl-4 tab-pane active fade show">
+                    <div class="col-12 col-xl-10 mx-auto">
+                        <div class="row row-cols-1 row-cols-lg-2 g-4 g-sm-5">
+                            <div class="col">
+                                <div class="h1 text-white mb-3">
+                                    1. Install BepInEx
+                                </div>
+                                <ol>
+                                    <li>
+                                        <p>
+                                            Download <a href="https://builds.bepinex.dev/projects/bepinex_be/572/BepInEx_UnityIL2CPP_x64_9c2b17f_6.0.0-be.572.zip">BepInEx Artifact #572</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Extract the zip folder into your game's install directory (likely <code>C:\Program Files (x86)\Steam\steamapps\common\TUNIC</code>). For the PC Game Pass version, extract the zip into the "Content" folder:  <code>C:\XboxGames\Tunic\Content</code>.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            Launch the game and close it. This will finalize the BepInEx installation.
+                                        </p>
+                                    </li>
+                                </ol>
                             </div>
-                            <ol>
-                                <li>
-                                    <p>
-                                        Download <a href="https://builds.bepinex.dev/projects/bepinex_be/572/BepInEx_UnityIL2CPP_x64_9c2b17f_6.0.0-be.572.zip">BepInEx Artifact #572</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
+                            <div class="col tab-content">
+                                <div class="tab-pane show active" id="tab-solo">
+                                    <div class="h1 text-white mb-3">
+                                        2. Install Single-Player Mod
+                                    </div>
+                                    <ol>
+                                        <li>
+                                            <p>
+                                                Download the <code>TunicRandomizer.dll</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy it into BepInEx/plugins under your game's install directory
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                To uninstall the mod, either remove/delete the <code>TunicRandomizer.dll</code> file from the plugins folder or rename the <code>winhttp.dll</code> file located in the game's root directory.
+                                            </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="tab-pane show" id="tab-multi">
+                                    <div class="h1 text-white mb-3">
+                                        2. Install Multi-World Mod
+                                    </div>
+                                    <p class="lead">
+                                        The multi-world version of the randomizer uses Archipelago and is a bit more complicated to set up. You need to download and install the mod, change some settings in a JSON file, and generate a multi-world using Archipelago.
                                     </p>
-                                </li>
-                                <li>
                                     <p>
-                                        Extract the zip folder into your game's install directory (likely <code>C:\Program Files (x86)\Steam\steamapps\common\TUNIC</code>). For the PC Game Pass version, extract the zip into the "Content" folder:  <code>C:\XboxGames\Tunic\Content</code>.
+                                        Because we can't really summarize the steps easily here, please see the <a href="https://github.com/silent-destroyer/tunic-randomizer-archipelago#installation">official instructions</a> to full setup.
                                     </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Launch the game and close it. This will finalize the BepInEx installation.
-                                    </p>
-                                </li>
-                            </ol>
-                        </div>
-                        <div class="col">
-                            <div class="h1 text-white mb-3">
-                                2. Install Randomizer
+                                </div>
                             </div>
-                            <ol>
-                                <li>
-                                    <p>
-                                        Download the <code>TunicRandomizer.dll</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy it into BepInEx/plugins under your game's install directory
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
-                                        To uninstall the mod, either remove/delete the <code>TunicRandomizer.dll</code> file from the plugins folder or rename the <code>winhttp.dll</code> file located in the game's root directory.
-                                    </p>
-                                </li>
-                            </ol>
                         </div>
                     </div>
                 </div>
