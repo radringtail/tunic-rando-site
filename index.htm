@@ -112,7 +112,7 @@
                 <div class="d-grid gap-2 d-flex justify-content-center mb-5">
                     <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box-strong">Get TUNIC</a>
                     <div class="dropdown">
-                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v3.1.0)</a>
+                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v3.1.1)</a>
                     </div>
                 </div>
             </div>
@@ -335,19 +335,19 @@
                 <div class="col">
                     <h2 class="text-white">
                         <i class="fas fa-skull"></i>
-                        Enemy Difficulty
+                        Balanced Enemies
                     </h2>
                     <p>
-                        <span class="text-danger-emphasis">Random:</span> All enemy spawns are chosen randomly from the full pool of enemies. <span class="text-success-emphasis">Balanced:</span> Enemies will only be replaced with an enemy of similar difficulty.
+                        <span class="text-success-emphasis">On:</span> Enemies will only be replaced with an enemy of similar difficulty. <span class="text-danger-emphasis">Off:</span> All enemy spawns are chosen randomly from the full pool of enemies.
                     </p>
                 </div>
                 <div class="col">
                     <h2 class="text-white">
-                        <i class="fas fa-seedling"></i>
-                        Enemy Generation
+                        <i class="fas fa-lock"></i>
+                        Seeded Enemies
                     </h2>
                     <p>
-                        <span class="text-danger-emphasis">Random:</span> Enemies will change every time you leave and come back to an area. <span class="text-success-emphasis">Seeded:</span> Enemy spawns will remain consistent per area.
+                        <span class="text-success-emphasis">On:</span> Enemy spawns will remain consistent per area. <span class="text-danger-emphasis">Off:</span> Enemies will change every time you leave and come back to an area.
                     </p>
                 </div>
             </div>
@@ -440,7 +440,7 @@
                         Progress Tracker
                     </h2>
                     <p>
-                        A progress tracker is built into the inventory screen. Shows current and total checks, counts for pages, fairies, treasures and coins, and boss and key progress.
+                        A progress tracker is built into the inventory screen. Shows checks, pages, fairies, treasures, coins, abilities, and boss and key progress.
                     </p>
                 </div>
                 <div class="col">
@@ -481,20 +481,20 @@
             <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 g-lg-5 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5">
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-shopping-cart text-info"></i>
-                        Cheaper Shop Items
-                    </h3>
-                    <p>
-                        Reduces the cost of the four randomized Shop items from 1000 to 300. Does not affect other Shop items.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
                         <i class="fas fa-user-plus text-info"></i>
                         Bonus Upgrades
                     </h3>
                     <p>
                         Makes the "golden treasure" items give a bonus level-up to certain stats on pick-up (not applied retroactively).
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-shopping-cart text-info"></i>
+                        Cheaper Shop Items
+                    </h3>
+                    <p>
+                        Reduces the cost of the four randomized Shop items from 1000 to 300. Does not affect other Shop items.
                     </p>
                 </div>
                 <div class="col">
@@ -508,8 +508,53 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
+                        <i class="fas fa-angle-double-up text-info"></i>
+                        Skip Upgrade Animations
+                    </h3>
+                    <p>
+                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-crown text-info"></i>
+                        Laurels Location
+                    </h3>
+                    <p>
+                        Edit the Laurels location. Default is Random (within logic), but also the 6-coin, 10-coin, or 10-fairy checks.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-forward text-info"></i>
+                        Skip Item Popups
+                    </h3>
+                    <p>
+                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-fire text-info"></i>
+                        Enable All Checkpoints
+                    </h3>
+                    <p>
+                        Activates all checkpoints (Heir statues, bonfires, etc.) even if they are unpowered or broken.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-tree text-info"></i>
+                        Clear Early Bushes
+                    </h3>
+                    <p>
+                        Removes bushes in the very early game that gates the player out of some areas of the Overworld.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
                         <i class="fas fa-shield-alt text-info"></i>
-                        Chest Interruption
+                        No Chest Interruption
                     </h3>
                     <p>
                         Enemies will not be able to interrupt you while opening chests if this option is turned on.
@@ -540,6 +585,15 @@
                     </h3>
                     <p>
                         Starting mode that disables randomized items but keeps all of the other features of the randomizer.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-question text-info"></i>
+                        Mystery Seed
+                    </h3>
+                    <p>
+                        Start a new game with completely randomized Randomizer settings.
                     </p>
                 </div>
                 <div class="col">
@@ -676,82 +730,65 @@
                 <h1 class="text-center text-white display-3" id="setup">
                     Setup
                 </h1>
-                <ul class="nav nav-tabs nav-fill my-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab-solo" href="#">Single-Player</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-multi" href="#">Multi-World</a>
-                    </li>
-                </ul>
                 <p>
                     A two-step process to set up the Randomizer mod.
                 </p>
             </div>
             
-            <div class="tab-content">
-                <div class="row pt-4 pt-sm-5 pb-4 pb-sm-5 mb-3 mb-xl-4 tab-pane active fade show">
-                    <div class="col-12 col-xl-10 mx-auto">
-                        <div class="row row-cols-1 row-cols-lg-2 g-4 g-sm-5">
-                            <div class="col">
-                                <div class="h1 text-white mb-3">
-                                    1. Install BepInEx
-                                </div>
-                                <ol>
-                                    <li>
-                                        <p>
-                                            Download <a href="https://builds.bepinex.dev/projects/bepinex_be/572/BepInEx_UnityIL2CPP_x64_9c2b17f_6.0.0-be.572.zip">BepInEx Artifact #572</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Extract the zip folder into your game's install directory (likely <code>C:\Program Files (x86)\Steam\steamapps\common\TUNIC</code>). For the PC Game Pass version, extract the zip into the "Content" folder:  <code>C:\XboxGames\Tunic\Content</code>.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            Launch the game and close it. This will finalize the BepInEx installation.
-                                        </p>
-                                    </li>
-                                </ol>
+            <div class="row pt-4 pt-sm-5 pb-4 pb-sm-5 mb-3 mb-xl-4 tab-pane active fade show">
+                <div class="col-12 col-xl-10 mx-auto">
+                    <div class="row row-cols-1 row-cols-lg-2 g-4 g-sm-5 pb-4">
+                        <div class="col">
+                            <div class="h1 text-white mb-3">
+                                1. Install BepInEx
                             </div>
-                            <div class="col tab-content">
-                                <div class="tab-pane show active" id="tab-solo">
-                                    <div class="h1 text-white mb-3">
-                                        2. Install Single-Player Mod
-                                    </div>
-                                    <ol>
-                                        <li>
-                                            <p>
-                                                Download the <code>TunicRandomizer.dll</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy it into BepInEx/plugins under your game's install directory
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                To uninstall the mod, either remove/delete the <code>TunicRandomizer.dll</code> file from the plugins folder or rename the <code>winhttp.dll</code> file located in the game's root directory.
-                                            </p>
-                                        </li>
-                                    </ol>
-                                </div>
-                                <div class="tab-pane show" id="tab-multi">
-                                    <div class="h1 text-white mb-3">
-                                        2. Install Multi-World Mod
-                                    </div>
-                                    <p class="lead">
-                                        The multi-world version of the randomizer uses Archipelago and is a bit more complicated to set up. You need to download and install the mod, change some settings in a JSON file, and generate a multi-world using Archipelago.
-                                    </p>
+                            <ol>
+                                <li>
                                     <p>
-                                        Because we can't really summarize the steps easily here, please see the <a href="https://github.com/silent-destroyer/tunic-randomizer#generating-a-multiworld-with-archipelago">official instructions</a> to full setup.
+                                        Download <a href="https://builds.bepinex.dev/projects/bepinex_be/572/BepInEx_UnityIL2CPP_x64_9c2b17f_6.0.0-be.572.zip">BepInEx Artifact #572</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
                                     </p>
-                                </div>
+                                </li>
+                                <li>
+                                    <p>
+                                        Extract the zip folder into your game's install directory (likely <code>C:\Program Files (x86)\Steam\steamapps\common\TUNIC</code>). For the PC Game Pass version, extract the zip into the "Content" folder:  <code>C:\XboxGames\Tunic\Content</code>.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Launch the game and close it. This will finalize the BepInEx installation.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="tab-pane show active" id="tab-solo">
+                            <div class="h1 text-white mb-3">
+                                2. Install Mod Files
                             </div>
+                            <ol>
+                                <li>
+                                    <p>
+                                        Download the <code>TunicRandomizer.zip</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy the contents into BepInEx/plugins under your game's install directory.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        To uninstall the mod, either remove/delete the <code>TunicRandomizer.dll</code> file from the plugins folder or rename the <code>winhttp.dll</code> file located in the game's root directory.
+                                    </p>
+                                </li>
+                            </ol>
                         </div>
                     </div>
+                </div>
+                <hr>
+                <div class="col-12 col-xl-10 mx-auto pt-3">
+                    <p>
+                        The <b>multiworld version</b> of the randomizer uses Archipelago and is a bit more complicated to set up. Please see the <a href="https://archipelago.gg/tutorial/TUNIC/setup/en#configure-archipelago-options">official instructions</a> to full setup.
+                    </p>
                 </div>
             </div>
             
@@ -853,11 +890,8 @@
                         </a>
                     </h3>
                     <p>
-                        Whether you're interested in solo rando, multi-world rando, or you simply enjoy watching runs — this is a great place to become a part of the community and hang out with other fans.
+                        Whether you're interested in solo rando, multiworld rando, or you simply enjoy watching runs — this is a great place to become a part of the community and hang out with other fans.
                     </p>
-                    <a href="https://discord.gg/HXkztJgQWj" class="btn btn-outline-light external">
-                        Join Server
-                    </a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">
@@ -869,9 +903,6 @@
                     <p>
                         Speedruns for a randomizer? Sure! Rather than trying to be the best, we created leaderboards to let you track your fastest seeds and runs, compare them to others, and encourage you to try other settings!
                     </p>
-                    <a href="https://www.speedrun.com/tunic_rando" class="btn btn-outline-light external">
-                        Visit SRC
-                    </a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">
@@ -883,9 +914,6 @@
                     <p>
                         racetime.gg is a place where you can organise races online between people all over the world. It provides a simple, yet modern and secure platform to help you and your friends (or rivals) compete in real-time.
                     </p>
-                    <a href="https://racetime.gg/tunic-rando" class="btn btn-outline-light external">
-                        View Races
-                    </a>
                 </div>
                 <div class="col">
                     <h3 class="text-white">
@@ -897,9 +925,6 @@
                     <p>
                         Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
                     </p>
-                    <a href="https://tunic.run/" class="btn btn-outline-light external">
-                        View Guides
-                    </a>
                 </div>
             </div>
         </div>    
