@@ -69,6 +69,9 @@
                                 <a href="#hints" class="nav-link">Hints</a>
                             </li>
                             <li class="nav-item">
+                                <a href="#entrances" class="nav-link">Entrances</a>
+                            </li>
+                            <li class="nav-item">
                                 <a href="#enemies" class="nav-link">Enemies</a>
                             </li>
                             <li class="nav-item">
@@ -107,12 +110,12 @@
             </h1>
             <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-5 mx-auto">
                 <p class="lead mb-4 fs-4 text-white text-shadow scanlines-text">
-                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item and enemy, hints, enhanced fox customization, custom items, and much, much more!
+                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Features item, enemy, and entrance randomization, hints, enhanced fox customization, custom items, and much, much more!
                 </p>
                 <div class="d-grid gap-2 d-flex justify-content-center mb-5">
                     <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box-strong">Get TUNIC</a>
                     <div class="dropdown">
-                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v4.2.7)</a>
+                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v5.0.0)</a>
                     </div>
                 </div>
             </div>
@@ -143,7 +146,7 @@
                         Classic Randomizer
                     </h1>
                     <p class="display-6">
-                        Find the three Hexagon Keys and Take Your Rightful Place or Share Your Wisdom to finish.
+                        Find the three Questagons and Take Your Rightful Place or Share Your Wisdom to finish.
                     </p>
                 </div>
             </div>
@@ -156,7 +159,7 @@
                         Hexagon Quest
                     </h1>
                     <p class="display-6">
-                        Gold Hexagons are shuffled throughout the world. Find most of them and visit The Heir to finish.
+                        Gold Questagons are shuffled throughout the world. Find most of them and visit The Heir to finish.
                     </p>
                 </div>
             </div>
@@ -194,21 +197,12 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/entrance.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of fox with sword">
-                    <h2 class="text-white">
-                        Entrance Rando
-                    </h2>
-                    <p>
-                        All entrances, doors, and portals become randomly connected to each other! Who knows where you'll end up?
-                    </p>
-                </div>
-                <div class="col">
                     <img src="assets/keys-behind-bosses.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of hexagon key">
                     <h2 class="text-white">
                         Keys Behind Bosses
                     </h2>
                     <p>
-                        Choose if the three Hexagon Keys are randomly shuffled or placed behind their respective boss fights.
+                        Choose if the three Questagons are randomly shuffled or placed behind their respective boss fights.
                     </p>
                 </div>
             </div>
@@ -236,6 +230,7 @@
                             </h2>
                             <p class="fs-4 lead">
                                 All free-standing items will have their model swapped to their randomized item. Chest textures will also be swapped to match the item inside, including Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
+                                Archipelago Items are color-coded based on their usefulness.
                             </p>
                         </div>
                     </div>
@@ -248,8 +243,10 @@
                                 Ghost Foxes
                             </h2>
                             <p class="fs-4 lead">
-                                Spawns 15 ghosts around the world that give hints, including the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique spawns, all with their own custom dialogue!
+                                Spawns 15 ghosts around the world that give hints, including the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 70 unique spawns*, all with their own custom dialogue!
                             </p>
+                            <br/>
+                            *some Ghost Foxes can only be found in Entrance Rando.
                         </div>
                     </div>    
                 </div>    
@@ -289,11 +286,11 @@
                 <div class="col">
                     <img src="assets/hex-keys.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150" alt="drawing of a hexagon key">
                     <h2 class="text-white">
-                        Hexagon Keys
+                        Questagons
                     </h2>
                     <hr>
                     <p>
-                        The Hero's Grave in the <span class="text-warning-emphasis">Swamp</span>, the <span class="text-warning-emphasis">Monastery</span>, and the <span class="text-warning-emphasis">Library</span> will hint at the location of one of the three Hexagon keys&mdash;but which one?
+                        The Hero's Grave in the <span class="text-warning-emphasis">Swamp</span>, the <span class="text-warning-emphasis">Monastery</span>, and the <span class="text-warning-emphasis">Library</span> will hint at the location of one of the three Questagon keys&mdash;but which one?
                     </p>
                 </div>
                 <div class="col">
@@ -307,6 +304,65 @@
                     </p>
                 </div>
             </div>            
+            
+            <!--                  -->
+            <!-- Entrance Section -->
+            <!--                  -->
+            <div class="text-center col-lg-8 col-xl-7 mx-auto mb-3 pb-sm-2">
+                <h1 class="text-center text-white display-3" id="entrances">
+                    Entrance Randomization
+                </h1>
+                <hr>
+                <p>
+                    All entrances, doors, and portals become randomly connected to each other! Where will the fox end up?
+                </p>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 pb-3 mb-5">
+                <div class="col-12 col-lg-6">
+                    <video autoplay muted loop playsinline poster="assets/video/entrance-rando.jpg" src="assets/video/entrance-rando.mp4" class="d-block mx-lg-auto img-fluid border border-2 rounded-3 shadow w-100"></video>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-arrows-alt"></i>
+                        Matching Directions
+                    </h2>
+                    <hr>
+                    <p>
+                        Pair each entrance up with one that matches the expected direction on the other side (i.e. North/South, East/West, Teleporters, Ladders Up/Down).
+                    </p>
+                    <h2 class="text-white">
+                        <i class="fas fa-store"></i>
+                        Fixed Shop
+                    </h2>
+                    <hr>
+                    <p>
+                        Place a guaranteed shop entrance at the Overworld Windmill entrance and removes all other shop entrances from the pool.
+                    </p>
+                    <h2 class="text-white">
+                        <i class="fas fa-unlink"></i>
+                        Decoupled Entrances 
+                    </h2>
+                    <hr>
+                    <p>
+                        Turns every entrance into a one-way. Leaving from where you came will take you somewhere else.
+                    </p>
+                </div>
+            </div>
+            <div class="row flex-lg-row align-items-center g-5 pb-5 mb-0 mb-sm-3 mb-lg-5">
+                <div class="col-12 col-lg-6">
+                    <video autoplay muted loop playsinline poster="assets/video/fox-prince.jpg" src="assets/video/fox-prince.mp4" class="d-block mx-lg-auto img-fluid border border-2 rounded-3 shadow w-100"></video>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-drafting-compass text-info"></i>
+                        Fox Prince
+                    </h2>
+                    <hr>
+                    <p class="display-6">
+                        Entrance Rando with a twist, inspired by Blue Prince. <br/>Every entrance prompts you with three choices for where to go next.
+                    </p>
+                </div>
+            </div>
             
             <!--                 -->
             <!-- Enemies Section -->
@@ -322,20 +378,29 @@
                 </p>
             </div>
             <video autoplay muted loop playsinline poster="assets/video/enemy-rando.jpg" src="assets/video/enemy-rando.mp4" class="img-fluid border rounded-4 shadow-lg d-block"></video>
-            <div class="row row-cols-1 row-cols-lg-3 g-4 g-xl-5 pb-5 pt-4 pt-sm-5 mb-0 mb-sm-3 mb-lg-5">
+            <div class="row row-cols-1 row-cols-lg-4 g-4 g-xl-5 pb-5 pt-4 pt-sm-5 mb-0 mb-sm-3 mb-lg-5">
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-balance-scale"></i>
+                        Enemy Sizes
+                    </h2>
+                    <p>
+                        Randomly scales enemies between 0.25x and 1.75x their original size. Works with or without randomized enemies.
+                    </p>
+                </div>
                 <div class="col">
                     <h2 class="text-white">
                         <i class="fas fa-plus-square"></i>
                         Extra Enemies
                     </h2>
                     <p>
-                        Choose whether or not to enable New Game+ and Dark World enemy slots to add more enemies into the mix for increased chaos.
+                        Enable New Game+ and Dark World enemy slots to add more enemies into the mix for increased chaos. Works with or without randomized enemies.
                     </p>
                 </div>
                 <div class="col">
                     <h2 class="text-white">
                         <i class="fas fa-skull"></i>
-                        Balanced Enemies
+                        Balance Enemies
                     </h2>
                     <p>
                         <span class="text-success-emphasis">On:</span> Enemies will only be replaced with an enemy of similar difficulty. <span class="text-danger-emphasis">Off:</span> All enemy spawns are chosen randomly from the full pool of enemies.
@@ -352,9 +417,9 @@
                 </div>
             </div>
             
-            <!--               -->
-            <!-- Color Section -->
-            <!--               -->
+            <!--                           -->
+            <!-- Fox Customization Section -->
+            <!--                           -->
             
             <div class="text-center col-sm-8 mx-auto">
                 <h1 class="text-center text-white display-3" id="fox">
@@ -417,8 +482,26 @@
                 <div class="col">
                     <video poster="assets/video/color-editor.jpg" src="assets/video/color-editor.mp4" preload="auto" autoplay muted loop playsinline class="d-block img-fluid border rounded-3 shadow-lg w-100"></video>
                 </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-search-plus"></i>
+                        Bigger Head Mode
+                    </h2>
+                    <p>
+                        Toggles Big Head Mode without needing to use the HC code.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-search-minus"></i>
+                        Tinier Fox Mode
+                    </h2>
+                    <p>
+                        Shrinks the fox to half its normal size.
+                    </p>
+                </div>
             </div>
-            
+
             <!--                  -->
             <!-- Features Section -->
             <!--                  -->
@@ -450,7 +533,7 @@
                         Quick Settings
                     </h2>
                     <p>
-                        A small menu on the title screen allows you to change game mode and logic options and configure and share <b>custom seeds</b> and settings.
+                        Easily view and customize all randomizer options, create and share custom seeds, and more, directly from the title screen.
                     </p>
                 </div>
                 <div class="col">
@@ -503,7 +586,7 @@
                         Fool Traps
                     </h3>
                     <p>
-                        Enables traps that replace low-value money rewards and damage or add negative effects.
+                        Replaces low-value money rewards with traps that apply damage and other negative effects.
                     </p>
                 </div>
                 <div class="col">
@@ -745,7 +828,7 @@
                             <ol>
                                 <li>
                                     <p>
-                                        Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip">this version of BepInEx</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
+                                        Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip">BepInEx 6.0.0-pre.1 for IL2CPP</a> &mdash; this is the required version of the modding framework used for TUNIC.
                                     </p>
                                 </li>
                                 <li>
@@ -767,12 +850,12 @@
                             <ol>
                                 <li>
                                     <p>
-                                        Download the <code>TunicRandomizer.zip</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy the contents into BepInEx/plugins under your game's install directory.
+                                        Download the <code>TunicRandomizer.zip</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/latest">from the latest release</a> and copy the contents into BepInEx/plugins under your game's install directory.
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
+                                        Launch the game again and, after a brief load, you should see "Randomizer Mod Ver. x.y.z" in the upper-left on the title screen!
                                     </p>
                                 </li>
                                 <li>
@@ -785,9 +868,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="col-12 col-xl-10 mx-auto pt-3">
+                <div class="text-center col-12 col-xl-10 mx-auto pt-3">
                     <p>
-                        The <b>multiworld version</b> of the randomizer uses Archipelago and is a bit more complicated to set up. Please see the <a href="https://archipelago.gg/tutorial/TUNIC/setup/en#configure-archipelago-options">official instructions</a> to full setup.
+                        For setting up <b>multi-world randomizers</b>, please see the <a href="https://archipelago.gg/tutorial/TUNIC/setup/en#configure-archipelago-options">official instructions</a> on the Archipelago website.
                     </p>
                 </div>
             </div>
@@ -811,9 +894,9 @@
                         <img src="assets/emotracker.jpg" class="img-fluid" alt="screenshot of emotracker">
                         <div class="pt-4 pb-5 px-5 text-white mx-auto text-center">
                             <h2 class="mb-0">
-                                <a href="https://github.com/SapphireSapphic/TunicTracker" class="text-decoration-none external">
+                                <a href="https://github.com/SapphireSapphic/TunicTracker/releases/latest" class="text-decoration-none external">
                                     <i class="far fa-map"></i>
-                                    EmoTracker
+                                    PopTracker Pack
                                 </a>
                             </h2>
                             <p class="lead">
@@ -821,7 +904,7 @@
                             </p>
                             <hr>
                             <p class="lead">
-                                EmoTracker is a standard, multi-game tracking software, and TUNIC is supported! To install, simply navigate to the package manager in EmoTracker, and search "Tunic", then hit download!
+                                <a href="https://github.com/black-sliver/PopTracker/releases/latest">PopTracker</a> is a multi-game tracking software that can be used with TUNIC. To install, download both PopTracker and the TUNIC Tracker pack using the links above.
                             </p>
                         </div>
                     </div>
@@ -857,11 +940,11 @@
                                 </a>
                             </h2>
                             <p class="lead">
-                                By ScipioWright
+                                By ScipioWright, Silent
                             </p>
                             <hr>
                             <p class="lead">
-                                A web-based tool that helps you keep track of how entrances are connected when using the Entrance Randomizer option.
+                                A web-based tool that helps you keep track of how entrances are connected when using the Entrance Randomizer option. Supports auto-tracking with Archipelago.
                             </p>
                         </div>
                     </div>
