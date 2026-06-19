@@ -9,7 +9,6 @@
     <meta property="og:url" content="https://rando.tunic.run/">
     <meta property="og:description" content="An extensive randomizer mod for TUNIC.">
     <meta property="og:type" content="website">
-    <meta name="yandex-verification" content="6e8b0c34dccd5b1c" />
     
     <title>TUNIC Randomizer</title>
     
@@ -66,10 +65,13 @@
                                 <a href="#logic" class="nav-link">Logic</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#hints" class="nav-link">Hints</a>
+                                <a href="#enemies" class="nav-link">Enemies</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#enemies" class="nav-link">Enemies</a>
+                                <a href="#entrances" class="nav-link">Entrances</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#hints" class="nav-link">Hints</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#fox" class="nav-link">Fox</a>
@@ -107,12 +109,12 @@
             </h1>
             <div class="col-md-10 col-lg-8 col-xl-7 col-xxl-5 mx-auto">
                 <p class="lead mb-4 fs-4 text-white text-shadow scanlines-text">
-                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Featuring randomization of every item and enemy, hints, enhanced fox customization, custom items, and much, much more!
+                    An extensive mod for TUNIC, an action-adventure game about a tiny fox in a big world. Features item, enemy, and entrance randomization, hints, enhanced fox customization, custom items, and much, much more!
                 </p>
                 <div class="d-grid gap-2 d-flex justify-content-center mb-5">
                     <a href="https://tunicgame.com/" class="btn btn-primary btn-lg px-4 me-sm-3 scanlines-box-strong">Get TUNIC</a>
                     <div class="dropdown">
-                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v4.2.7)</a>
+                        <a href="https://github.com/silent-destroyer/tunic-randomizer#installation" class="btn btn-success btn-lg px-4 scanlines-box-strong">Get Randomizer (v5.0.0)</a>
                     </div>
                 </div>
             </div>
@@ -143,7 +145,7 @@
                         Classic Randomizer
                     </h1>
                     <p class="display-6">
-                        Find the three Hexagon Keys and Take Your Rightful Place or Share Your Wisdom to finish.
+                        Find the three Questagons and Take Your Rightful Place or Share Your Wisdom to finish.
                     </p>
                 </div>
             </div>
@@ -156,7 +158,7 @@
                         Hexagon Quest
                     </h1>
                     <p class="display-6">
-                        Gold Hexagons are shuffled throughout the world. Find most of them and visit The Heir to finish.
+                        Gold Questagons are shuffled throughout the world. Find most of them and visit The Heir to finish.
                     </p>
                 </div>
             </div>
@@ -174,7 +176,7 @@
                     Customize your randomizer experience to your liking. Must be set before starting a new game.
                 </p>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-5 pb-5 mb-0 mb-sm-3 mb-lg-5 text-center">
+            <div class="row row-cols-2 row-cols-md-4 row-cols-xl-4 g-5 mb-5 text-center justify-content-center">
                 <div class="col">
                     <img src="assets/sword-progression.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of fox and heir fighting with swords">
                     <h2 class="text-white">
@@ -186,37 +188,265 @@
                 </div>
                 <div class="col">
                     <img src="assets/ability-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of fox praying">
-                    <h2 class="text-white">
+                    <h3 class="text-white">
                         Shuffle Abilities
-                    </h2>
+                    </h3>
                     <p>
                         Locks prayer, (most) uses of the Holy Cross, and the Ice Beam until the respective manual pages are found.
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/entrance.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of fox with sword">
-                    <h2 class="text-white">
-                        Entrance Rando
-                    </h2>
+                    <img src="assets/shuffle-ladders.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of fox and heir fighting with swords">
+                    <h3 class="text-white">
+                        Shuffle Ladders
+                    </h3>
                     <p>
-                        All entrances, doors, and portals become randomly connected to each other! Who knows where you'll end up?
+                        Removes several ladders until they are unlocked as items in the pool.
                     </p>
+                    <figure">
+                        <blockquote class="blockquote">
+                            <p class="small">"Ladders were a mistake."</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            <cite title="Source Title">Andrew Shouldice</cite>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="col">
-                    <img src="assets/keys-behind-bosses.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of hexagon key">
-                    <h2 class="text-white">
-                        Keys Behind Bosses
-                    </h2>
+                    <img src="assets/laurels.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="200" alt="drawing of hexagon key">
+                    <h3 class="text-white">
+                        Laurels Location
+                    </h3>
                     <p>
-                        Choose if the three Hexagon Keys are randomly shuffled or placed behind their respective boss fights.
+                        Choose where the Hero's Laurels are placed. Default is shuffled but can be 6/10-coin or 10-fairy checks.
                     </p>
                 </div>
             </div>
+
+            <h2 class="text-center display-4 mb-4">Add More Checks</h2>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5 mb-5 text-center justify-content-center">
+                <div class="col">
+                    <img src="assets/fuse-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="175" alt="drawing of fox praying">
+                    <h3 class="text-white fs-4">
+                        Shuffle Fuses
+                    </h3>
+                    <p>
+                        Praying at a fuse rewards an item instead of turning on the power, which is shuffled into the item pool as a separate unlock.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/shuffle-bells.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="175" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-4">
+                        Shuffle Bells
+                    </h3>
+                    <p>
+                        The East and West bells are shuffled into the item pool and must be found in order to unlock the Sealed Temple.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/enemy-drops-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="175" alt="drawing of fox praying">
+                    <h3 class="text-white fs-4">
+                        Shuffle Enemy Drops
+                    </h3>
+                    <p>
+                        Every individual enemy and boss drops an item when defeated (excluding The Heir).
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/breakable-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="175" alt="drawing of fox and heir fighting with swords">
+                    <h3 class="text-white fs-4">
+                        Shuffle Breakables
+                    </h3>
+                    <p>
+                        Turns 250+ ordinary breakable objects into checks, including signs, pots, boxes, barrels, bombable walls, and more.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/grass-rando.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="175" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-4">
+                        Grass Randomizer
+                    </h3>
+                    <p>
+                        Turns over 6000 bushes and blades of grass into potential item locations.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="text-center display-5 mb-4">Other Logic Options</h2>
+            <div class="row row-cols-2 row-cols-md-4 row-cols-xl-6 pb-5 mb-5 text-center justify-content-center">
+                <div class="col">
+                    <img src="assets/keys-behind-bosses.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Keys Behind Bosses
+                    </h3>
+                    <p class="small">
+                        Choose if the three Questagons are randomly shuffled or placed behind their respective boss fights.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/enemy-souls-shuffle.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Shuffle Enemy Souls
+                    </h3>
+                    <p class="small">
+                        Enemies are removed until their corresponding "soul" item is found (Enemy Drops must be enabled).
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/tricks-glitches.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Tricks & Glitches
+                    </h3>
+                    <p class="small">
+                        Toggle <b>ladder storage</b>, <b>ice grappling</b>, or <b>laurels shortcuts</b> in logic, with varying levels of difficulty. 
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/lanternless.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Lanternless Logic
+                    </h3>
+                    <p class="small">
+                        If enabled, <b>dark areas</b> may be required before finding the Lantern. Are you afraid of the dark?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/maskless.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Maskless Logic
+                    </h3>
+                    <p class="small">
+                        If enabled, <b>Lower Quarry</b> may be required before finding the Scavenger's Mask. Can you make it?
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assets/mystery-seed.jpg" class="img-fluid shadow rounded-circle border border-5 mb-3" width="150" alt="drawing of hexagon key">
+                    <h3 class="text-white fs-5">
+                        Mystery Seed
+                    </h3>
+                    <p class="small">
+                        Settings are randomly selected on New Game. Can be configured by editing the weights for each option.
+                    </p>
+                </div>
+            </div>
+
+            <!--                 -->
+            <!-- Enemies Section -->
+            <!--                 -->
             
+            <div class="text-center col-lg-8 col-xl-7 mx-auto mb-3 pb-sm-2">
+                <h1 class="text-center text-white display-3" id="enemies">
+                    Enemy Randomization
+                </h1>
+                <hr>
+                <p>
+                    Randomly shuffles enemies when you load into a scene. Can be turned on or off at any point.
+                </p>
+            </div>
+            <video autoplay muted loop playsinline poster="assets/video/enemy-rando.jpg" src="assets/video/enemy-rando.mp4" class="img-fluid border rounded-4 shadow-lg d-block"></video>
+            <div class="row row-cols-1 row-cols-lg-4 g-4 g-xl-5 pb-5 pt-4 pt-sm-5 mb-0 mb-sm-3 mb-lg-5">
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-balance-scale"></i>
+                        Enemy Sizes
+                    </h2>
+                    <p>
+                        Randomly scales enemies between 0.25x and 1.75x their original size. Works with or without randomized enemies.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-plus-square"></i>
+                        Extra Enemies
+                    </h2>
+                    <p>
+                        Enable New Game+ and Dark World enemy slots to add more enemies into the mix for increased chaos. Works with or without randomized enemies.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-skull"></i>
+                        Balance Enemies
+                    </h2>
+                    <p>
+                        <span class="text-success-emphasis">On:</span> Enemies will only be replaced with an enemy of similar difficulty. <span class="text-danger-emphasis">Off:</span> All enemy spawns are chosen randomly from the full pool of enemies.
+                    </p>
+                </div>
+                <div class="col">
+                    <h2 class="text-white">
+                        <i class="fas fa-lock"></i>
+                        Seeded Enemies
+                    </h2>
+                    <p>
+                        <span class="text-success-emphasis">On:</span> Enemy spawns will remain consistent per area. <span class="text-danger-emphasis">Off:</span> Enemies will change every time you leave and come back to an area.
+                    </p>
+                </div>
+            </div>
+
+            <!--                  -->
+            <!-- Entrance Section -->
+            <!--                  -->
+            <div class="text-center col-lg-8 col-xl-7 mx-auto mb-3 pb-sm-2">
+                <h1 class="text-center text-white display-3" id="entrances">
+                    Entrance Randomization
+                </h1>
+                <hr>
+                <p>
+                    All entrances, doors, and portals become randomly connected to each other! Where will the fox end up?
+                </p>
+            </div>
+            <div class="row align-items-center g-5 pb-3 mb-5">
+                <div class="col-lg-6 order-lg-last">
+                    <video autoplay muted loop playsinline poster="assets/video/entrance-rando.jpg" src="assets/video/entrance-rando.mp4" class="img-fluid border border-2 rounded-3 shadow w-100"></video>
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <h2 class="text-white">
+                        <i class="fas fa-exchange-alt"></i>
+                        Matching Directions
+                    </h2>
+                    <p class="mb-4">
+                        Pair each entrance up with one that matches the expected direction on the other side (i.e. North/South, East/West, Teleporters, Ladders Up/Down).
+                    </p>
+
+                    <h2 class="text-white">
+                        <i class="fas fa-unlink"></i>
+                        Decoupled Entrances 
+                    </h2>
+                    <p class="mb-4">
+                        Turns every entrance into a one-way. Leaving from where you came will take you somewhere else.
+                    </p>
+
+                    <h2 class="text-white">
+                        <i class="fas fa-store"></i>
+                        Fixed Shop
+                    </h2>
+                    <p>
+                        Place a guaranteed shop entrance at the Overworld Windmill entrance and removes all other shop entrances from the pool.
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center g-5 pb-5 mb-0 mb-sm-3 mb-lg-5">
+                <div class="col-12 col-lg-6">
+                    <video autoplay muted loop playsinline poster="assets/video/fox-prince.jpg" src="assets/video/fox-prince.mp4" class="img-fluid border border-2 rounded-3 shadow w-100"></video>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white display-4">
+                        <i class="fas fa-drafting-compass text-info"></i>
+                        Fox Prince
+                    </h2>
+                    <p class="fs-4">
+                        Shuffles entrances with a twist, inspired by <i>Blue Prince</i>.
+                    </p>
+                    <p class="fs-5">
+                        Every entrance prompts you with three choices for where to go next. A new "dicey" item allows you to re-roll for three new choices. A new "dart" item pins a selection for future entrance selections.
+                    </p>
+                </div>
+            </div>
+
             <!--               -->
             <!-- Hints Section -->
             <!--               -->
-            
+
             <div class="text-center col-lg-7 mx-auto mb-5 pb-sm-2">
                 <h1 class="text-center text-white display-2" id="hints">
                     Hint Options
@@ -236,6 +466,7 @@
                             </h2>
                             <p class="fs-4 lead">
                                 All free-standing items will have their model swapped to their randomized item. Chest textures will also be swapped to match the item inside, including Fairies, Treasures, the three Hexagons, and the Hero's Laurels.
+                                Archipelago Items are color-coded based on their usefulness.
                             </p>
                         </div>
                     </div>
@@ -248,8 +479,10 @@
                                 Ghost Foxes
                             </h2>
                             <p class="fs-4 lead">
-                                Spawns 15 ghosts around the world that give hints, including the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 50 unique spawns, all with their own custom dialogue!
+                                Spawns 15 ghosts around the world that give hints, including the locations of useful non-progression items, items in hard-to-reach locations, and barren locations. There are over 70 unique spawns*, all with their own custom dialogue!
                             </p>
+                            <br/>
+                            *some Ghost Foxes can only be found in Entrance Rando.
                         </div>
                     </div>    
                 </div>    
@@ -289,15 +522,15 @@
                 <div class="col">
                     <img src="assets/hex-keys.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150" alt="drawing of a hexagon key">
                     <h2 class="text-white">
-                        Hexagon Keys
+                        Questagons
                     </h2>
                     <hr>
                     <p>
-                        The Hero's Grave in the <span class="text-warning-emphasis">Swamp</span>, the <span class="text-warning-emphasis">Monastery</span>, and the <span class="text-warning-emphasis">Library</span> will hint at the location of one of the three Hexagon keys&mdash;but which one?
+                        The Hero's Grave in the <span class="text-warning-emphasis">Swamp</span>, the <span class="text-warning-emphasis">Monastery</span>, and the <span class="text-warning-emphasis">Library</span> will hint at the location of one of the three Questagon keys&mdash;but which one?
                     </p>
                 </div>
                 <div class="col">
-                    <img src="assets/laurels.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150" alt="drawing of the fox wearing the laurels">
+                    <img src="assets/laurels-2.jpg" class="img-fluid rounded-circle border border-3 shadow mb-3" width="150" alt="drawing of the fox wearing the laurels">
                     <h2 class="text-white">
                         Hero's Laurels
                     </h2>
@@ -307,54 +540,10 @@
                     </p>
                 </div>
             </div>            
-            
-            <!--                 -->
-            <!-- Enemies Section -->
-            <!--                 -->
-            
-            <div class="text-center col-lg-8 col-xl-7 mx-auto mb-3 pb-sm-2">
-                <h1 class="text-center text-white display-3" id="enemies">
-                    Enemy Randomization
-                </h1>
-                <hr>
-                <p>
-                    Randomly shuffles enemies when you load into a scene. Can be toggled at any point.
-                </p>
-            </div>
-            <video autoplay muted loop playsinline poster="assets/video/enemy-rando.jpg" src="assets/video/enemy-rando.mp4" class="img-fluid border rounded-4 shadow-lg d-block"></video>
-            <div class="row row-cols-1 row-cols-lg-3 g-4 g-xl-5 pb-5 pt-4 pt-sm-5 mb-0 mb-sm-3 mb-lg-5">
-                <div class="col">
-                    <h2 class="text-white">
-                        <i class="fas fa-plus-square"></i>
-                        Extra Enemies
-                    </h2>
-                    <p>
-                        Choose whether or not to enable New Game+ and Dark World enemy slots to add more enemies into the mix for increased chaos.
-                    </p>
-                </div>
-                <div class="col">
-                    <h2 class="text-white">
-                        <i class="fas fa-skull"></i>
-                        Balanced Enemies
-                    </h2>
-                    <p>
-                        <span class="text-success-emphasis">On:</span> Enemies will only be replaced with an enemy of similar difficulty. <span class="text-danger-emphasis">Off:</span> All enemy spawns are chosen randomly from the full pool of enemies.
-                    </p>
-                </div>
-                <div class="col">
-                    <h2 class="text-white">
-                        <i class="fas fa-lock"></i>
-                        Seeded Enemies
-                    </h2>
-                    <p>
-                        <span class="text-success-emphasis">On:</span> Enemy spawns will remain consistent per area. <span class="text-danger-emphasis">Off:</span> Enemies will change every time you leave and come back to an area.
-                    </p>
-                </div>
-            </div>
-            
-            <!--               -->
-            <!-- Color Section -->
-            <!--               -->
+
+            <!--                           -->
+            <!-- Fox Customization Section -->
+            <!--                           -->
             
             <div class="text-center col-sm-8 mx-auto">
                 <h1 class="text-center text-white display-3" id="fox">
@@ -417,6 +606,24 @@
                 <div class="col">
                     <video poster="assets/video/color-editor.jpg" src="assets/video/color-editor.mp4" preload="auto" autoplay muted loop playsinline class="d-block img-fluid border rounded-3 shadow-lg w-100"></video>
                 </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-search-plus"></i>
+                        Bigger Head Mode
+                    </h2>
+                    <p>
+                        Toggles Big Head Mode without needing to use the HC code.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-white">
+                        <i class="fas fa-search-minus"></i>
+                        Tinier Fox Mode
+                    </h2>
+                    <p>
+                        Shrinks the fox to half its normal size.
+                    </p>
+                </div>
             </div>
             
             <!--                  -->
@@ -450,7 +657,7 @@
                         Quick Settings
                     </h2>
                     <p>
-                        A small menu on the title screen allows you to change game mode and logic options and configure and share <b>custom seeds</b> and settings.
+                        Easily view and customize all randomizer options, create and share custom seeds, and more, directly from the title screen.
                     </p>
                 </div>
                 <div class="col">
@@ -475,73 +682,10 @@
                 </h1>
                 <hr>
                 <p>
-                    These options can be changed at any time throughout the game.
+                    Quality of life options that can be changed at any time throughout the game.
                 </p>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 g-lg-5 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5">
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-user-plus text-info"></i>
-                        Bonus Upgrades
-                    </h3>
-                    <p>
-                        Makes the "golden treasure" items give a bonus level-up to certain stats on pick-up (not applied retroactively).
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-shopping-cart text-info"></i>
-                        Cheaper Shop Items
-                    </h3>
-                    <p>
-                        Reduces the cost of the four randomized Shop items from 1000 to 300. Does not affect other Shop items.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-exclamation-triangle text-info"></i>
-                        Fool Traps
-                    </h3>
-                    <p>
-                        Enables traps that replace low-value money rewards and damage or add negative effects.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-angle-double-up text-info"></i>
-                        Skip Upgrade Animations
-                    </h3>
-                    <p>
-                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-crown text-info"></i>
-                        Laurels Location
-                    </h3>
-                    <p>
-                        Edit the Laurels location. Default is Random (within logic), but also the 6-coin, 10-coin, or 10-fairy checks.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-forward text-info"></i>
-                        Skip Item Popups
-                    </h3>
-                    <p>
-                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-fire text-info"></i>
-                        Enable All Checkpoints
-                    </h3>
-                    <p>
-                        Activates all checkpoints (Heir statues, bonfires, etc.) even if they are unpowered or broken.
-                    </p>
-                </div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-5 gy-4 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5">
                 <div class="col">
                     <h3 class="text-white">
                         <i class="fas fa-tree text-info"></i>
@@ -549,15 +693,6 @@
                     </h3>
                     <p>
                         Removes bushes in the very early game that gates the player out of some areas of the Overworld.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <i class="fas fa-shield-alt text-info"></i>
-                        No Chest Interruption
-                    </h3>
-                    <p>
-                        Enemies will not be able to interrupt you while opening chests if this option is turned on.
                     </p>
                 </div>
                 <div class="col">
@@ -571,11 +706,110 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-language text-info"></i>
-                        Trunic Hints
+                        <i class="fas fa-fire text-info"></i>
+                        Enable All Checkpoints
                     </h3>
                     <p>
-                        Translates nearly all of the custom dialogue, hints, and other text into only "Trunic" characters.
+                        Activates all checkpoints (Heir statues, bonfires, etc.) even if they are unpowered or broken.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-shopping-cart text-info"></i>
+                        Cheaper Shop Items
+                    </h3>
+                    <p>
+                        Reduces the cost of the four randomized Shop items from 1000 to 300. Does not affect other Shop items.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-user-plus text-info"></i>
+                        Bonus Upgrades
+                    </h3>
+                    <p>
+                        Makes the "golden treasure" items give +1 to certain stats on pick-up (not applied retroactively).
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-shield-alt text-info"></i>
+                        No Chest Interruption
+                    </h3>
+                    <p>
+                        Enemies will not be able to interrupt you while opening chests if this option is turned on.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-history text-info"></i>
+                        Recent Items Display
+                    </h3>
+                    <p>
+                        Enable a UI widget showing the five most recent items received.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-forward text-info"></i>
+                        Skip Item Popups
+                    </h3>
+                    <p>
+                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-angle-double-up text-info"></i>
+                        Skip Upgrade Animations
+                    </h3>
+                    <p>
+                        Rather than show an item pick-up animation for each collected, displays a banner description instead.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-music text-info"></i>
+                        Music Shuffle
+                    </h3>
+                    <p>
+                        Shuffles the music that plays throughout the game. Includes toggles for individual tracks.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-exclamation-triangle text-info"></i>
+                        Fool Traps
+                    </h3>
+                    <p>
+                        Replaces low-value money rewards with traps that apply damage and other negative effects.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-arrows-alt text-info"></i>
+                        Holy Cross DDR
+                    </h3>
+                    <p>
+                        Spawns arrows when using Holy Cross. Arrows change color to indicate successful or failed inputs.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-bug text-info"></i>
+                        Arachnophobia Mode
+                    </h3>
+                    <p>
+                        Turns the Spider enemies into floating signs that say 'Spider' in Trunic.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
+                        <i class="fas fa-tv text-info"></i>
+                        CRT Filter
+                    </h3>
+                    <p>
+                        Render the game with a CRT filter overlay.
                     </p>
                 </div>
                 <div class="col">
@@ -589,20 +823,20 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-question text-info"></i>
-                        Mystery Seed
+                        <i class="fas fa-language text-info"></i>
+                        Trunic Hints
                     </h3>
                     <p>
-                        Start a new game with completely randomized Randomizer settings.
+                        Translates nearly all of the custom dialogue, hints, and other text into only "Trunic" characters.
                     </p>
                 </div>
                 <div class="col">
                     <h3 class="text-white">
-                        <i class="fas fa-utensil-spoon text-info"></i>
-                        Start with Sword
+                        <i class="fas fa-map-marker-alt text-info"></i>
+                        Show Player Position
                     </h3>
                     <p>
-                        Spawn with a Sword in the inventory on New Game. Does not count towards Sword Progression. 
+                        Shows the coordinates of the player in the lower right corner of the screen.
                     </p>
                 </div>
                 <div class="col">
@@ -745,7 +979,7 @@
                             <ol>
                                 <li>
                                     <p>
-                                        Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip">this version of BepInEx</a>&mdash;only this version of BepInEx will work correctly to load mods for TUNIC.
+                                        Download <a href="https://github.com/BepInEx/BepInEx/releases/download/v6.0.0-pre.1/BepInEx_UnityIL2CPP_x64_6.0.0-pre.1.zip">BepInEx 6.0.0-pre.1 for IL2CPP</a> &mdash; this is the required version of the modding framework used for TUNIC.
                                     </p>
                                 </li>
                                 <li>
@@ -767,12 +1001,12 @@
                             <ol>
                                 <li>
                                     <p>
-                                        Download the <code>TunicRandomizer.zip</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases">from the latest release</a> and copy the contents into BepInEx/plugins under your game's install directory.
+                                        Download the <code>TunicRandomizer.zip</code> file <a href="https://github.com/silent-destroyer/tunic-randomizer/releases/latest">from the latest release</a> and copy the contents into BepInEx/plugins under your game's install directory.
                                     </p>
                                 </li>
                                 <li>
                                     <p>
-                                        Launch the game again and, after a brief load, you should see "Randomizer Mod" in the upper-left on the title screen!
+                                        Launch the game again and, after a brief load, you should see "Randomizer Mod Ver. x.y.z" in the upper-left on the title screen!
                                     </p>
                                 </li>
                                 <li>
@@ -785,9 +1019,9 @@
                     </div>
                 </div>
                 <hr>
-                <div class="col-12 col-xl-10 mx-auto pt-3">
+                <div class="text-center col-12 col-xl-10 mx-auto pt-3">
                     <p>
-                        The <b>multiworld version</b> of the randomizer uses Archipelago and is a bit more complicated to set up. Please see the <a href="https://archipelago.gg/tutorial/TUNIC/setup/en#configure-archipelago-options">official instructions</a> to full setup.
+                        For setting up <b>multi-world randomizers</b>, please see the <a href="https://archipelago.gg/tutorial/TUNIC/setup/en#configure-archipelago-options">official instructions</a> on the Archipelago website.
                     </p>
                 </div>
             </div>
@@ -811,9 +1045,9 @@
                         <img src="assets/emotracker.jpg" class="img-fluid" alt="screenshot of emotracker">
                         <div class="pt-4 pb-5 px-5 text-white mx-auto text-center">
                             <h2 class="mb-0">
-                                <a href="https://github.com/SapphireSapphic/TunicTracker" class="text-decoration-none external">
+                                <a href="https://github.com/SapphireSapphic/TunicTracker/releases/latest" class="text-decoration-none external">
                                     <i class="far fa-map"></i>
-                                    EmoTracker
+                                    PopTracker Pack
                                 </a>
                             </h2>
                             <p class="lead">
@@ -821,7 +1055,7 @@
                             </p>
                             <hr>
                             <p class="lead">
-                                EmoTracker is a standard, multi-game tracking software, and TUNIC is supported! To install, simply navigate to the package manager in EmoTracker, and search "Tunic", then hit download!
+                                <a href="https://github.com/black-sliver/PopTracker/releases/latest">PopTracker</a> is a multi-game tracking software that can be used with TUNIC. To install, download both PopTracker and the TUNIC Tracker pack using the links above.
                             </p>
                         </div>
                     </div>
@@ -857,11 +1091,11 @@
                                 </a>
                             </h2>
                             <p class="lead">
-                                By ScipioWright
+                                By ScipioWright, Silent
                             </p>
                             <hr>
                             <p class="lead">
-                                A web-based tool that helps you keep track of how entrances are connected when using the Entrance Randomizer option.
+                                A web-based tool that helps you keep track of how entrances are connected when using the Entrance Randomizer option. Supports auto-tracking with Archipelago.
                             </p>
                         </div>
                     </div>
@@ -881,12 +1115,12 @@
                     Other ways to connect with the TUNIC enthusiast community.
                 </p>
             </div>
-            <div class="row row-cols-1 row-cols-lg-2 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5 g-4 g-sm-5">
+            <div class="row row-cols-2 row-cols-lg-4 pt-4 pt-sm-5 pb-5 mb-3 mb-sm-4 mb-lg-5 g-4 g-sm-5">
                 <div class="col">
                     <h3 class="text-white">
                         <a href="https://discord.gg/HXkztJgQWj" class="text-decoration-none link-light external">
                             <i class="fab fa-discord text-primary-emphasis pe-1"></i>
-                            Community Server
+                            Discord Server
                         </a>
                     </h3>
                     <p>
@@ -895,9 +1129,20 @@
                 </div>
                 <div class="col">
                     <h3 class="text-white">
+                        <a href="https://tunic.run/" class="text-decoration-none link-light external">
+                            <i class="fas fa-stopwatch text-info-emphasis pe-1"></i>
+                            Speedrunning
+                        </a>
+                    </h3>
+                    <p>
+                        Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
+                    </p>
+                </div>
+                <div class="col">
+                    <h3 class="text-white">
                         <a href="https://www.speedrun.com/tunic_rando" class="text-decoration-none link-light external">
                             <i class="fas fa-trophy text-warning-emphasis pe-1"></i>
-                            Official Leaderboards
+                            Leaderboards
                         </a>
                     </h3>
                     <p>
@@ -913,17 +1158,6 @@
                     </h3>
                     <p>
                         racetime.gg is a place where you can organise races online between people all over the world. It provides a simple, yet modern and secure platform to help you and your friends (or rivals) compete in real-time.
-                    </p>
-                </div>
-                <div class="col">
-                    <h3 class="text-white">
-                        <a href="https://tunic.run/" class="text-decoration-none link-light external">
-                            <i class="fas fa-stopwatch text-info-emphasis pe-1"></i>
-                            TUNIC Speedrunning
-                        </a>
-                    </h3>
-                    <p>
-                        Want to learn how to speedrun this game? Maybe just looking to pick up some techniques to optimize your randomizer game? Look no further! We also have a website with extensive guides on most categories.
                     </p>
                 </div>
             </div>
